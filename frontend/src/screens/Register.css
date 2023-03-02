@@ -1,0 +1,28 @@
+.checkbox-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.checkbox-container input{
+    margin-right: 15px;
+}
+
+.register__button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #171717;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #f4f4f4;
+    border: 1px solid #171717;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.register__button:hover {
+    background: #171717;
+    color: #f4f4f4;
+}

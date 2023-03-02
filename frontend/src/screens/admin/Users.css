@@ -1,0 +1,80 @@
+.users__table-wrapper {
+    /* width: 90%; */
+    max-width: 100%;
+    overflow-x: auto;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    margin: 0 auto;
+  }
+
+.users__table table {
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+.users__table table, th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.users__table thead th {
+    background-color: #d1e0d7;
+}
+
+.users__table tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+.users__container h2{
+    margin-bottom: 20px;
+}
+
+.users__headers{
+    display: flex;
+    flex-direction: row;
+}
+
+.users__headers .users__gap{
+    display: none;
+}
+
+.users__navlink{
+    display: none;
+}
+
+  @media (max-width: 1000px) {
+    .admin-content {
+        margin: 0px !important;
+        font-size: 15px;
+    }
+    .users__table-wrapper {
+        margin-left: -40px;
+    }
+    .users__container h2 {
+        margin-left: -40px;
+    }
+    .users__headers .users__gap{
+        display: block;
+        margin-left: 0px;
+    }
+    .users__navlink{
+        display: block;
+        margin-left: 40px;
+    }
+    .users__table-wrapper {
+        margin-left: -40px;
+    }
+    .users__container h2 {
+        margin-left: -40px;
+    }
+  }
+
+  @media (max-width: 729px) {
+    .admin-content {
+        margin: 0px !important;
+        font-size: 12px;
+  }
+  }

@@ -1,0 +1,76 @@
+MAKE CLASSES SPECIFIC, IMPINGING ON OTHER PARTS OF SITE*/
+
+.login__main{
+    padding-top: 7rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: none;
+}
+
+.box {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+    margin: auto auto;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box h2 {
+    margin: 0 0 30px 0;
+    padding: 0;
+    color: #171717;
+    text-align: center;
+}
+
+.box .inputBox label {
+    color: #171717;
+}
+
+.box .inputBox input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #171717;
+    color: #171717;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    outline: none;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.login__button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #171717;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #f4f4f4;
+    border: 1px solid #171717;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.login__button:hover {
+    background: #171717;
+    color: #f4f4f4;
+}

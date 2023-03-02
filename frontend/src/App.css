@@ -1,0 +1,14 @@
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171717;
+    margin-top: -4px;
+    height: 100px;
+}
+
+.divider-title{
+    color: #f4f4f4;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+}
