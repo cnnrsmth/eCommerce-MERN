@@ -1,10 +1,14 @@
 import './Navbar.css'
-import {Link} from 'react-router-dom'
+import { Link , useLocation , useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
 import logo from '../photos/logo.png'
 
 const Navbar = ({ click }) => {
+  
+  const location = useLocation()
+  
+  const navigate = useNavigate()
 
   const { cartTotalQuantity } = useSelector(state => state.cart)
 
@@ -14,7 +18,7 @@ const Navbar = ({ click }) => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     setIsLoggedIn(!!token);
-  }, []);
+  }, [location]);
 
   useEffect(() => {
     if (isLoggedIn) {
@@ -27,7 +31,7 @@ const Navbar = ({ click }) => {
   async function handleAdminCheck() {
     const token = localStorage.getItem('token');
     if (token) {
-      const response = await fetch('http://localhost:5000/api/admin/accessAdmin', {
+      const response = await fetch('https://ecommerce-process.onrender.com/api/admin/accessAdmin', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +53,7 @@ const Navbar = ({ click }) => {
       alert('You need to be an admin to access this page.');
       return;
     }
-    window.location.href = '/admin';
+    navigate("/admin");
   };
 
   return (
@@ -70,9 +74,9 @@ const Navbar = ({ click }) => {
           </Link>
         </li>
         <li>
-          <a href="/admin" onClick={handleAdminLinkClick}>
+          <Link to="/admin" onClick={handleAdminLinkClick}>
             Admin
-          </a>
+          </Link>
         </li>
         <li>
           <Link to={isLoggedIn ? '/home' : '/login'}

@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 import './Register.css'
 
 function Register() {
+    
+    const navigate = useNavigate()
 
     const [newUser, setNewUser] = useState({
         "email": "",
@@ -24,21 +27,19 @@ function Register() {
         }
     
         try {
-            const response = await fetch('http://localhost:5000/api/auth/register', {
+            const response = await fetch('https://ecommerce-process.onrender.com/api/auth/register', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(newUser),
-            });
+            })
     
             if (!response.ok) {
                 const errorData = await response.json();
                 alert(errorData.message);
-                return;
             }
-    
-            window.location = "/login"
+            navigate("/login")
         } catch (error) {
             console.error(error);
             alert("An error occurred while registering");

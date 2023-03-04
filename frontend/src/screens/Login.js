@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { Link , useNavigate } from 'react-router-dom';
 import './Login.css'
 
 function Login() {
 
+    const navigate = useNavigate();
+    
     const [confirmUser, setConfirmUser] = useState({
         "email": "",
         "password": ""
@@ -12,7 +15,7 @@ function Login() {
         e.preventDefault();
         console.log(confirmUser)
             try {
-                const response = await fetch('http://localhost:5000/api/auth/login', {
+                const response = await fetch('https://ecommerce-process.onrender.com/api/auth/login', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -23,9 +26,8 @@ function Login() {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const data = await response.json();
-                //sets token response from api to local storage, to persist for the users session
                 localStorage.setItem("token", data.token)
-                window.location = "/cart";
+                navigate("/cart")
             } catch (e) {
                 console.error(e);
             }
@@ -66,7 +68,9 @@ function Login() {
                         <button className="login__button" type="submit" style={{float: 'left'}}>Submit</button>
                         <div className="register__link">
                             <p>Don't have an account yet? </p>
-                            <a className="button" href="/register" style={{float: 'left'}}>Sign up</a>
+                            <Link className="button" to="/register" style={{float: 'left'}}>
+                                Sign up
+                            </Link>
                         </div>
                     </div>
                 </form>

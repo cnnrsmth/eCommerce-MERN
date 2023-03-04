@@ -9,7 +9,7 @@ function Orders() {
 
   async function fetchOrders() {
     try {
-      const response = await fetch('http://localhost:5000/api/admin/getOrders', {
+      const response = await fetch('https://ecommerce-process.onrender.com/api/admin/getOrders', {
         method: 'GET',
       })
       const ordersData = await response.json()

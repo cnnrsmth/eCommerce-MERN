@@ -9,7 +9,7 @@ function Users() {
 
   async function fetchUsers() {
     try {
-      const response = await fetch('http://localhost:5000/api/admin/getUsers', {
+      const response = await fetch('https://ecommerce-process.onrender.com/api/admin/getUsers', {
         method: 'GET',
       })
       const userData = await response.json()

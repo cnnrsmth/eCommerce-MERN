@@ -7,7 +7,6 @@ import store from "./redux/store"
 import { Provider } from "react-redux"
 import { getTotals } from './redux/cartSlice'
 
-//update totals when application loads
 store.dispatch(getTotals())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

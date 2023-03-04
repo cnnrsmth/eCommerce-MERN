@@ -32,7 +32,6 @@ function App() {
       <BrowserRouter>
         <ToastContainer/>
         <Navbar click={() => setSideToggle(true)} />
-        {/* <Header /> */}
         <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
         <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
         <Routes>

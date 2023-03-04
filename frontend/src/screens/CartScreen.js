@@ -28,7 +28,7 @@ const CartScreen = () => {
   const handleOrderSubmit = () => {
     const token = localStorage.getItem('token')
 
-    fetch('http://localhost:5000/api/checkout', {
+    fetch('https://ecommerce-process.onrender.com/api/checkout', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -81,7 +81,6 @@ const CartScreen = () => {
                 <Link to={localStorage.getItem('token') ? '/checkout' : '/login'}>
                   <button onClick={(event) => {
                     if (!localStorage.getItem('token')) {
-                      // event.preventDefault();
                     } else {
                       handleOrderSubmit();
                       handleClearCart();

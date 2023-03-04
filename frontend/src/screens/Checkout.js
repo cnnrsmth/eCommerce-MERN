@@ -1,5 +1,6 @@
 import React, { useEffect , useState } from 'react'
 import { useSelector , useDispatch } from 'react-redux'
+import {Link} from 'react-router-dom'
 import { getTotals} from '../redux/cartSlice'
 import checkoutGif from '../photos/checkout.gif'
 import './Checkout.css'
@@ -31,7 +32,7 @@ function Checkout() {
 
     async function fetchOrder() {
         try {
-          const response = await fetch('http://localhost:5000/api/checkout/getOrder', {
+          const response = await fetch('https://ecommerce-process.onrender.com/api/checkout/getOrder', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
@@ -91,12 +92,9 @@ function Checkout() {
                 </table>
             </div>
             <div className="checkout__button">
-                <button onClick={() => {
-                    localStorage.clear();
-                    window.location.href = '/home';
-                }}>
-                    Logout
-                </button>
+                <Link to="/home" onClick={() => localStorage.clear()}>
+                  Logout
+                </Link>
             </div>
         </div>
     </div>
