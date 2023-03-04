@@ -1,6 +1,6 @@
 # Full-Stack MERN eCommerce Application
 
-Try it here: https://ecommerce-app-inb9.onrender.com/home 
+Try it here: https://ecommerce-app-inb9.onrender.com
 
 ## Desktop view
 
