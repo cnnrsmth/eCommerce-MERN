@@ -4,19 +4,19 @@ Try it here: https://ecommerce-app-inb9.onrender.com/home
 
 ## Desktop view
 
-![Image showing landing page](./images/Picture 1.png)
+![Image showing landing page](./images/'Picture 1'.png)
 
-![Image showing eCommerce flow](./images/Picture 2.png)
+![Image showing eCommerce flow](./images/'Picture 2'.png)
 
-![Image showing eCommerce flow](./images/Picture 3.png)
+![Image showing eCommerce flow](./images/'Picture 3'.png)
 
-![Image showing eCommerce flow](./images/Picture 4.png)
+![Image showing eCommerce flow](./images/'Picture 4'.png)
 
-![Image showing eCommerce flow](./images/Picture 5.png)
+![Image showing eCommerce flow](./images/'Picture 5'.png)
 
-![Image showing shopping cart](./images/Picture 6.png)
+![Image showing shopping cart](./images/'Picture 6'.png)
 
-![Image showing order completion](./images/Picture 7.png)
+![Image showing order completion](./images/'Picture 7'.png)
 
 This is a simple eCommerce website. The eCommerce flow (as seen here) is part of a conceptual larger digital enterprise that focuses on all-facets of lifespan / healthspan extension. This particular segment focuses on the sale of supplements to support health / wellbeing, from an organ systems perspective (something not currently pursued in the market). Informed by appropraite diagnostic tests capturing biomarkers associated with each organ system, the client could then be directed to the appropriate supplement stack as indicated. 
 
