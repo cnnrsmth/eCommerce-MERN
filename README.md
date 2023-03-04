@@ -18,7 +18,7 @@ Try it here: https://ecommerce-app-inb9.onrender.com/home
 
 ![Image showing order completion](./images/Picture7.png)
 
-This is a simple eCommerce website. The eCommerce flow (as seen here) is part of a conceptual larger digital enterprise that focuses on all-facets of lifespan / healthspan extension. This particular segment focuses on the sale of supplements to support health / wellbeing, from an organ systems perspective (something not currently pursued in the market). Informed by appropraite diagnostic tests capturing biomarkers associated with each organ system, the client could then be directed to the appropriate supplement stack as indicated. 
+This is a simple eCommerce website. The eCommerce flow (as seen here) is part of a conceptual larger digital enterprise that focuses on all-facets of lifespan / healthspan extension. This particular segment focuses on the sale of supplements to support health / wellbeing, from an organ systems perspective (something not currently pursued in the market). Informed by diagnostic tests capturing biomarkers associated with each organ system, the client could then be directed to the appropriate supplement stack as indicated. 
 
 The site was designed as my capstone project on the HyperionDev coding bootcamp. Given the short time constraints imposed on the project, there are numerous improvements that I intend to refactor into the codebase in the near future, including:
 
