@@ -1,0 +1,22 @@
+.footer {
+  width: 100vw;
+  padding: 20px 0px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  background-color: white;
+}
+
+.cartScreen-footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer > p {
+  margin-bottom: 0 !important;
+}
+
+.footer > * {
+  padding: 0px 12px;
+}
