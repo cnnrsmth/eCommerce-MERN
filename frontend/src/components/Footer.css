@@ -1,22 +1,20 @@
 .footer {
   width: 100vw;
-  padding: 20px 0px;
+  padding: 20px 80px;
   margin-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  background-color: white;
+  align-items: center;
+  background-color: hsl(181, 100%, 9%);
+  color: #fff;
 }
 
-.cartScreen-footer {
-  position: fixed;
-  bottom: 0;
+.footer a {
+  text-decoration: none;
+  color: #fff; /* Change to your preferred color */
 }
 
-.footer > p {
-  margin-bottom: 0 !important;
-}
-
-.footer > * {
-  padding: 0px 12px;
+.footer p {
+  margin: 0;
 }

@@ -1,6 +1,6 @@
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "typeface-cormorant-garamond";
@@ -25,11 +25,29 @@ import Header from "./components/Header";
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
+  const [navbarVisible, setNavbarVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 100) {
+        setNavbarVisible(false);
+      } else {
+        setNavbarVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <BrowserRouter>
       <ToastContainer />
-      <Navbar click={() => setSideToggle(true)} />
+      <Navbar click={() => setSideToggle(true)} visible={navbarVisible} />
       <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
       <Routes>

@@ -6,8 +6,6 @@ function Footer({ page }) {
   return (
     <div className={`footer ${page}`}>
       <p>Friend or Foe © 2023</p>
-      <Link to="">Refund Policy</Link>
-      <Link href="">Privacy Policy</Link>
       <a href="https://www.linkedin.com/in/cnnrsmth/">Site by Connor Smith</a>
     </div>
   );

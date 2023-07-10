@@ -1,3 +1,11 @@
+body {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .product__container {
   display: grid;
   gap: 1rem;
@@ -7,16 +15,16 @@
   line-height: 1.6;
 }
 
-.products__name{
+.products__name {
   grid-column: 1/13;
   grid-row: 1;
   display: grid;
   place-items: center;
   text-align: center;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 30px;
   background-color: #d1e0d7;
-  color: #A99F83;
+  color: #002f30;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-left: -30px;
@@ -37,25 +45,25 @@
   justify-content: center;
 }
 
-.img__container{
+.img__container {
   width: 25%;
 }
 
-.description__container{
+.description__container {
   width: 45%;
   text-align: center;
 }
 
-.right__info{
+.right__info {
   width: 25%;
   display: flex;
   justify-content: center;
 }
 
-.order__box{
+.order__box {
   width: 80%;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-  border-radius: 20px;;
+  border-radius: 20px;
 }
 
 .right__info p {
@@ -97,7 +105,7 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #A99F83;
+  color: #002f30;
   font-size: 20px;
 }
 
@@ -113,25 +121,25 @@
   list-style: none;
 }
 
-.ingredient__list li{
+.ingredient__list li {
   margin-bottom: 15px;
 }
 
 .ingredient__list ul li:before {
-  content: '\2714\0020';
+  content: "\2714\0020";
   color: #ffffff;
 }
 
-.bottom__container{
+.bottom__container {
   grid-column: 1/13;
   grid-row: 5;
 }
 
-.main__strapline{
-  color: #A99F83;
+.main__strapline {
+  color: #002f30;
 }
 
-.sub__strapline{
+.sub__strapline {
   text-align: center;
 }
 
@@ -139,16 +147,16 @@
   .middle__container {
     flex-direction: column;
   }
-  .img__container{
+  .img__container {
     width: 60%;
   }
-  
-  .description__container{
+
+  .description__container {
     width: 60%;
     text-align: center;
   }
-  
-  .right__info{
+
+  .right__info {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -159,7 +167,7 @@
   .ingredient__rationale {
     grid-column: 1 / 13;
   }
-  
+
   .ingredient__list {
     grid-column: 1 / 13;
   }
